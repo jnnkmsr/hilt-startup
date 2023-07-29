@@ -2,9 +2,10 @@
 ![GitHub](https://img.shields.io/github/license/jnnkmsr/hilt-startup?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/jnnkmsr/hilt-startup?style=for-the-badge)
 
-# Hilt Support for Android Startup
+# Hilt Support for Android App Startup
 
-<!-- TODO: Library description -->
+Android library enabling [Hilt][hilt] dependency injection into `Initializer`s
+from the [Android App Startup][startup] library. 
 
 <!-- TODO: Describe usage -->
 
@@ -56,4 +57,6 @@ limitations under the License.
 ```
 
 <!-- External Links -->
+[hilt]: https://dagger.dev/hilt/
 [jitpack]: https://jitpack.io/
+[startup]: https://d.android.com/topic/libraries/app-startup
