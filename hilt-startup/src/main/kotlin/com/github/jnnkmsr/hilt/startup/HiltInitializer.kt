@@ -48,9 +48,8 @@ protected constructor(
     private vararg val dependencies: Class<out Initializer<*>>,
 ) : Initializer<ComponentT> {
 
-    final override fun create(context: Context): ComponentT & Any {
-        return create(context, resolveEntryPoint(context))
-    }
+    final override fun create(context: Context): ComponentT & Any =
+        create(context, resolveEntryPoint(context))
 
     /**
      * Initializes and returns the component given the application [context].
