@@ -25,9 +25,9 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 28
+        minSdk = 14
         aarMetadata {
-            minCompileSdk = 28
+            minCompileSdk = 14
         }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -54,6 +54,13 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
     kotlin.explicitApi()
+
+    lint {
+        disable += setOf(
+            "EnsureInitializerMetadata",
+            "EnsureInitializerNoArgConstr",
+        )
+    }
 
     packaging.resources {
         excludes += "/META-INF/{AL2.0,LGPL2.1}"

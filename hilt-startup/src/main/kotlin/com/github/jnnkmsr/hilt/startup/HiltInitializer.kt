@@ -16,7 +16,6 @@
 
 package com.github.jnnkmsr.hilt.startup
 
-import android.annotation.SuppressLint
 import android.content.Context
 import androidx.startup.Initializer
 import dagger.hilt.EntryPoint
@@ -28,7 +27,6 @@ import dagger.hilt.components.SingletonComponent
  * [App Startup](https://d.android.com/topic/libraries/app-startup) library
  * with [Hilt](https://dagger.dev/hilt/) dependency injection.
  */
-@SuppressLint("EnsureInitializerNoArgConstr")
 public abstract class HiltInitializer<
     ComponentT,
     in EntryPointT,
